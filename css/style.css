@@ -1,0 +1,162 @@
+body{
+    background-color:white;
+    }
+      
+    a{
+       
+        color: black; 
+        text-decoration: none;
+        
+    }
+    /* стили для формы */
+     
+      * {
+        box-sizing: border-box;
+      }
+      
+      .form {
+        width:50%;
+        height: auto;
+        padding: 15px;
+        margin: 10% auto;
+        background-color: #fff;
+        border: 10px solid transparent;
+        border-image: liner-gradient(to right,#828282,#aaaaaa);
+        box-shadow: 0px 10px 45px #828282, 0 25px 25px #aaaaaa;
+      }
+      .calculator{
+        display: grid;
+        grid-template-columns: auto 1fr;
+
+      }
+      
+      .input {
+        /* display: block;
+        width: 100%; */
+        padding: 8px 10px;
+        margin-bottom: 20px;
+        border:none;
+        font-family: 'Lato', sans-serif;
+        font-size: 20px;
+        background-color:#f0ffdf;
+      }
+     select{
+          border: none;
+          -webkit-user-select: none;
+         -moz-user-select: -moz-none;
+          -ms-user-select: none;
+          user-select: none;
+
+        -webkit-appearance: none;
+         /* -moz-appearance: radio-container; */
+         appearance: none;
+         
+      }
+      
+      .btn {
+        display: block;
+        width: 100%;
+        padding: 8px 10px;
+        
+        border: 0;
+        background-color: #559e01;
+        cursor: pointer;
+        
+        font-family: 'Lato', sans-serif;
+        font-size: 20px;
+        letter-spacing: 2px;
+        color: #fff;
+        text-align: center;
+      }
+      
+      .btn:hover {
+        background-color: #073004;
+      }
+      label{
+          display: block;
+          font-size: 20px;
+          font-family: 'Lato', sans-serif;
+          letter-spacing: 2px;
+         
+      }
+     
+      span{
+          color: red;
+
+      }
+      img{
+          display:inline;
+          width:70%;
+          margin: 10px 15%;
+        
+      }
+      #square, #square1{
+       
+        
+          background-color:#f0ffdf;
+          letter-spacing: 2px;
+      }
+     
+      .btn1 {
+        padding:8px 10px;
+        border: none;
+        background-color: #559e01;
+        cursor: pointer;
+        font-family: 'Lato', sans-serif;
+        font-size: 20px;
+        color: #fff;
+        text-align: center;
+        height: 42px;
+      }
+      
+      .btn1:hover {
+        background-color: #073004;
+      }
+      .input1 {
+       
+        padding: 8px 10px;
+        margin-bottom: 10px;
+        border: none;
+        
+        font-family: 'Lato', sans-serif;
+        letter-spacing: 2px;
+        font-size: 20px;
+      }
+      #price{
+          text-align: center;
+          letter-spacing: 2px;
+      }
+      hr{
+          margin: 20px;
+          padding: 0;
+          border: none;
+	      border-top: 2px dashed rgb(27, 25, 25);
+         
+      }
+  .lineWrapper{
+    display: grid;
+    grid-template-columns:60% 15% 10% 10%;
+    grid-gap: 10px;
+   
+  }
+  
+  @media screen and (max-width: 768px) {
+    .calculator {
+        grid-template-columns: 1fr;
+    } 
+
+    img{
+        width: 200px;        
+    }
+    .lineWrapper{
+      grid-template-columns:30% 10% 5% 5%;
+    }
+    label select{
+      width:50px;
+      font-size: 10px;
+    }
+    .btn .btn1 .input .input1{
+      width:50px;
+      font-size: 10px;
+    }
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato&family=M+PLUS+2:wght@200;400&family=Montserrat:ital,wght@1,200&family=Outfit:wght@300&family=Oxygen&family=Poppins:wght@100&family=Quicksand:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script defer src="js/menu.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <form class="form" action="" method="post">
+        <div class="calculator">
+        <div class="myImg">
+        <img src="img/apartment.png" id="picture">
+        </div>
+        <div>
+        <label for="email">Оберіть тип приміщення</label>
+        
+        <select class="input" name="apatment" id="apatment">
+            <!-- <option disabled selected value="day-label">Офісне приміщення</option> -->
+            <option value="500">Офісне приміщення</option>
+            <option value="100">Одноповерховий дім</option>
+            <option value="300">Багатоповерховий дім</option>
+            
+    </select>
+
+            <label for="email">Вкажіть назву та площу кімнат</label>
+            <div class="globalWrapper">
+            <div class="lineWrapper">
+            <input class="input1" id="square" type="text" placeholder="Назва приміщення">
+            <input class="input1" id="square1" type="text" placeholder="0.00">
+             <input class="btn1" type="button" id="add" value="+">
+            <input class="btn1" type="button" id="clear" value="-">
+            </div>
+           
+            </div>
+        <hr>
+        <!-- <a href=""class="btn" >Розрахувати</a> -->
+        <input class="btn" type="button" id="run" value="Розрахувати">
+        <label for="text" id="price">Приблизна вартість ремонту</label><br>
+        <label for="text" id="price"><span id="price1">0.00</span> uah</label>
+    </div>
+    </div>
+      </form>
+    <script>
+    //   let myForm=new RemontForm();
+    //   myForm.init();
+    </script>
+</body>
+</html>
